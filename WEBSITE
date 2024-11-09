@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #222;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #f39c12;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1100px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+        }
+
+        .menu-item .item-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        .menu-item .item-details h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .menu-item .item-details p {
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .menu-item .price {
+            font-size: 1.3em;
+            color: #e67e22;
+        }
+
+        .reservation-form input, .reservation-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .reservation-form button {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        .reservation-form button:hover {
+            background-color: #f39c12;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Delicious Bites Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reserve a Table</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="https://www.allrecipes.com/thmb/CfocX_0yH5_hFxtbFkzoWXrlycs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ALR-12720-grilled-salmon-i-VAT-4x3-888cac0fb8a34f6fbde7bf836850cd1c.jpg" alt="Dish 1">
+            <div class="item-details">
+                <h3>Grilled Salmon</h3>
+                <p>Freshly grilled salmon with a lemon glaze.</p>
+            </div>
+            <div class="price">&#8377;750</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2023-09-chicken-parmesan%2Fchicken-parmesan-1287" alt="Dish 2">
+            <div class="item-details">
+                <h3>Chicken Parmesan</h3>
+                <p>Classic breaded chicken with marinara and mozzarella.</p>
+            </div>
+            <div class="price">&#8377;600</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg" alt="Dish 3">
+            <div class="item-details">
+                <h3>Vegetarian Pizza</h3>
+                <p>A delicious pizza with fresh veggies and mozzarella.</p>
+            </div>
+            <div class="price">&#8377;850</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.recipetineats.com/tachyon/2018/07/Spaghetti-Bolognese.jpg" alt="Dish 4">
+            <div class="item-details">
+                <h3>Spaghetti Bolognese</h3>
+                <p>Traditional spaghetti with a rich meat sauce.</p>
+            </div>
+            <div class="price">&#8377;800</div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation">
+        <h2>Reserve a Table</h2>
+        <form class="reservation-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+            <input type="date" id="date" name="date" required>
+            <input type="time" id="time" name="time" required>
+            <textarea id="message" name="message" rows="4" placeholder="Special requests or message"></textarea>
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Address:  National Residency Bldg Nelson Mandela Road A-Extension, Bannimantap Mysore 570015</p>
+            <p>Email: contact@deliciousbites.com</p>
+            <p>Phone: +91 7834257962</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Delicious Bites Restaurant | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for form validation or interactions -->
+    <script>
+        document.querySelector('.reservation-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form from submitting
+            alert('Your reservation has been submitted!');
+        });
+    </script>
+
+</body>
+</html>
